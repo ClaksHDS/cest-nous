@@ -1,13 +1,140 @@
-body {
+/*
+=====
+Variables
+=====
+*/
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,500&display=swap");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* Colors */
+  --backgroundColor: #fffffe;
+  --cardBackground: #eaddcf;
+  --headlineColor: #2b2607;
+  --secondaryColor: #716040;
+  /* fonts*/
+  --textFont: "Open Sans", sans-serif;
+  --textColor: #0d0b02;
+  /* Rest of the variables */
+  --transition: all 0.3s linear;
+  --borderRadius: 0.25rem;
+  --maxWidth: 1170px;
+  --fixedWidth: 620px;
+  /* Box Shadows */
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Global Styles */
+
+*,
+::after,
+::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: var(--textFont);
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--headlineColor);
+}
+p {
+  margin-bottom: 1rem;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Open Sans", sans-serif;
+}
+
+.title {
+  text-align: center;
+}
+
+.title .underline {
+  width: 6rem;
+  height: 0.25rem;
+  background: var(--headlineColor);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Loading spinner */
+/* Loading spinner */
+.loading {
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  border-top-color: var(--highlightColor);
+  margin: 2rem auto;
+  animation: spinner 0.5s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
 }
