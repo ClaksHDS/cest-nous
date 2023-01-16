@@ -8,13 +8,17 @@ import {
   BsInstagram,
   BsEnvelope,
 } from "react-icons/bs";
+
 /* Links for the navbar */
 export const links = [
   { id: 1, text: "accueil", url: "/" },
   { id: 2, text: "la distillerie", url: "/about" },
   { id: 3, text: "nos produits", url: "/about" },
 ];
-
+export const navButtons = [
+  { id: 1, text: "panier", icon: <BsBasket2 /> },
+  { id: 1, text: "se connecter", icon: <BsPerson /> },
+];
 /* Social Links */
 export const socialLinks = [
   {
