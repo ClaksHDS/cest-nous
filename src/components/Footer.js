@@ -21,15 +21,16 @@ function Footer() {
           );
         })}
       </ul>
-      <p>
-        &copy; {new Date().getFullYear()}
-        <span> Distillerie C'est Nous</span>
-      </p>
+
       <ul className='legal-links'>
         <li>mentions légales</li>
         <li>trade contact</li>
         <li>privacy policy</li>
       </ul>
+      <p>
+        &copy; {new Date().getFullYear()}
+        <span> Distillerie C'est Nous</span>
+      </p>
     </Wrapper>
   );
 }
@@ -44,7 +45,7 @@ const Wrapper = styled.footer`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    gap: 1rem;
+    gap: 0.02rem;
     padding-top: 1rem;
     a {
       font-size: 1.4rem;
@@ -63,13 +64,12 @@ const Wrapper = styled.footer`
     line-height: 1.25;
   }
   .legal-links {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     justify-content: center;
+
     li {
       text-transform: capitalize;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-left: 2rem;
     }
   }
 `;
