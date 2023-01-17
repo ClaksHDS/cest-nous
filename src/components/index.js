@@ -1,4 +1,4 @@
-import Navbar from "./Navbar";
+import NavLinks from "./Navbar";
 import Footer from "./Footer";
 
-export { Navbar, Footer };
+export { Footer, NavLinks };
