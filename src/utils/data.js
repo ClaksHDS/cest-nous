@@ -15,10 +15,7 @@ export const links = [
   { id: 2, text: "la distillerie", url: "/about" },
   { id: 3, text: "nos produits", url: "/products" },
 ];
-export const navButtons = [
-  { id: 1, text: "panier", icon: <BsBasket2 /> },
-  { id: 1, text: "se connecter", icon: <BsPerson /> },
-];
+
 /* Social Links */
 export const socialLinks = [
   {
