@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import { ProductsProvider } from "./context/products_context";
 
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,9 +11,9 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <ProductsProvider>
     <App />
-  </React.StrictMode>
+  </ProductsProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+/* Assets */
 import { socialLinks } from "../utils/data";
 
 function Footer() {

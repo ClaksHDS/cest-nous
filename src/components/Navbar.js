@@ -1,13 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+/* Context */
+import { useProductsContext } from "../context/products_context";
+/* Assets */
 import logo from "../assets/logo.webp";
 import { links } from "../utils/data";
+/* Components */
 import CartButtons from "./CartButtons";
-/* react icons */
+/* React icons */
 import { BiMenu } from "react-icons/bi";
 
 const NavLinks = () => {
+  const { openSidebar } = useProductsContext();
   return (
     <NavContainer>
       <div className='nav-center'>
@@ -15,7 +20,7 @@ const NavLinks = () => {
           <Link to='/' src={logo}>
             <img src={logo} alt="Logo Distillerie C'est Nous" />
           </Link>
-          <button type='button' className='nav-toggle'>
+          <button type='button' className='nav-toggle' onClick={openSidebar}>
             <BiMenu />
           </button>
         </div>

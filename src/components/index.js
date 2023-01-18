@@ -1,5 +1,6 @@
 import NavLinks from "./Navbar";
 import CartButtons from "./CartButtons";
+import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 
-export { Footer, NavLinks, CartButtons };
+export { NavLinks, Sidebar, CartButtons, Footer };

@@ -1,14 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { navButtons } from "../utils/data";
 import styled from "styled-components";
-/* react icons */
+/* Context */
+import { useProductsContext } from "../context/products_context";
+/* Assets */
+import { navButtons } from "../utils/data";
+/* React icons */
 import { BsBasket2, BsPerson } from "react-icons/bs";
 
 const CartButtons = () => {
+  const { closeSidebar } = useProductsContext();
   return (
     <Wrapper className='cart-btn-wrapper'>
-      <Link to='/cart' className='cart-btn'>
+      <Link to='/cart' className='cart-btn' onClick={closeSidebar}>
         Panier
         <span className='cart-container'>
           <BsBasket2 />
