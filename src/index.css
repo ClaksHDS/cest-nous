@@ -137,8 +137,8 @@ code {
   transition: var(--transition);
   font-size: 0.875rem;
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+  border-radius: var(--borderRadius);
   border-color: transparent;
 }
 .btn:hover {
@@ -159,7 +159,7 @@ code {
 }
 
 .page-100 {
-  min-height: calc(100vh -10rem);
+  min-height: calc(100vh -15rem);
   padding: 5rem 0;
 }
 .page {
