@@ -68,7 +68,10 @@ const NavContainer = styled.nav`
     color: var(--headlineColor);
     cursor: pointer;
     svg {
-      font-size: 2rem;
+      font-size: 2.5rem;
+    }
+    svg:hover {
+      color: var(--secondaryColor);
     }
   }
   .nav-links {
