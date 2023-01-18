@@ -13,6 +13,7 @@ function Footer() {
               <a
                 href={url}
                 target='_blank'
+                rel='noreferrer'
                 aria-label='links directing to our social media accounts'
               >
                 {icon}
@@ -38,7 +39,7 @@ function Footer() {
 /* Component styles */
 const Wrapper = styled.footer`
   height: 9rem;
-  background: var(--secondaryColor);
+  background: var(--headlineColor);
   text-align: center;
   color: var(--backgroundColor);
   .social-links {
