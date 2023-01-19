@@ -2,9 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 /* Components */
-import { PageHero } from "../components";
+import { PageHero, Sliders } from "../components";
 /* Assets */
-import logo from "../assets/logo.webp";
 import { bio } from "../utils/data";
 
 function AboutPage() {
@@ -13,7 +12,6 @@ function AboutPage() {
       <PageHero title='About' />
       <Wrapper className='page section section-center'>
         <div className='story-container'>
-          <img src={logo} alt="logo distillerie c'est nous" />
           <article>
             <div className='title'>
               <h2>notre distillerie</h2>
@@ -36,6 +34,7 @@ function AboutPage() {
               Découvrir nos spiritueux
             </Link>
           </article>
+          <Sliders />
         </div>
         <div className='title founder-title'>
           <h2>les fondateurs</h2>
