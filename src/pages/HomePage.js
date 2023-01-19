@@ -1,11 +1,12 @@
 import React from "react";
 /* Components */
-import { Hero, Services, Contact } from "../components";
+import { Hero, Story, Services, Contact } from "../components";
 
 function HomePage() {
   return (
     <main>
       <Hero />
+      <Story />
       <Services />
       <Contact />
     </main>
