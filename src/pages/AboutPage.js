@@ -30,9 +30,11 @@ function AboutPage() {
               l'embouteillage, l'habillage ou encore le cirage que nous
               pratiquons manuellement.
             </p>
-            <Link to='/products' className='btn nav-btn'>
-              Découvrir nos spiritueux
-            </Link>
+            <div className='link-container'>
+              <Link to='/products' className='btn nav-btn'>
+                Découvrir nos spiritueux
+              </Link>
+            </div>
           </article>
           <Sliders />
         </div>
@@ -75,10 +77,15 @@ const Wrapper = styled.section`
       color: var(--backgroundColor);
       display: flex;
       justify-content: center;
+      padding: 0.55rem 2rem;
     }
     .nav-btn:hover {
       background: var(--secondaryColor);
     }
+  }
+  .link-container {
+    display: flex;
+    justify-content: center;
   }
   h2 {
     text-align: center;
