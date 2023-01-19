@@ -9,6 +9,8 @@ import {
   BsEnvelope,
 } from "react-icons/bs";
 
+import { FaGlassMartiniAlt, FaHandHoldingHeart, FaAward } from "react-icons/fa";
+
 import julie from "../assets/julie.webp";
 import david from "../assets/dave.webp";
 
@@ -54,6 +56,28 @@ export const bio = [
     quote:
       "After arriving in France we noticed a lack of craft micro distilleries in France. With experience in hospitality and with a sommelier on the team we decided to create our own spirits! ",
     img: david,
+  },
+];
+
+/* Services */
+export const services = [
+  {
+    id: 1,
+    title: "spiritueux artisanaux",
+    desc: "Nous produisons des spiritueux artisanaux dont les recettes sont élaborées avec amour.",
+    icon: <FaHandHoldingHeart />,
+  },
+  {
+    id: 2,
+    title: "adaptabilité",
+    desc: "Distillés pour s'adapter à vos envies, n'hésitez pas à consommer nos spiritueux seuls, allongés ou en cocktail.",
+    icon: <FaGlassMartiniAlt />,
+  },
+  {
+    id: 3,
+    title: "qualité premium",
+    desc: "Nos aromates sont sélectionnés pour leur qualité gustative et localement le plus souvent possible.",
+    icon: <FaAward />,
   },
 ];
 /* Products */
