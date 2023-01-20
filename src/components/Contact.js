@@ -16,14 +16,14 @@ function Contact() {
 
           <form
             className='contact-form'
-            action='enterformspreelink'
+            action='https://formspree.io/f/myyazbwn'
             method='POST'
           >
             <input
               type='email'
               className='form-input'
               placeholder='votre adresse mail'
-              name='_replyto'
+              name='email'
             />
             <button type='submit' className='submit-btn'>
               inscrivez-vous
