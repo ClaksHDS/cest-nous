@@ -36,11 +36,11 @@ function Services() {
 const Wrapper = styled.section`
   /* h3 {
     color: var(--backgroundColor);
-  }
+  }*/
   h4 {
     color: var(--headlineColor);
     text-transform: capitalize;
-  } */
+  }
   padding: 2rem 0;
   background: var(--headlineColor);
   .header h3 {
