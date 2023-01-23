@@ -172,7 +172,7 @@ code {
   height: 5rem;
   border: 2px solid #ccc;
   border-radius: 50%;
-  border-top-color: var(--highlightColor);
+  border-top-color: var(--headlineColor);
   margin: 2rem auto;
   animation: spinner 0.5s linear infinite;
 }

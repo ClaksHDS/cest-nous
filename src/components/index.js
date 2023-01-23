@@ -7,6 +7,10 @@ import Hero from "./Hero";
 import Services from "./Services";
 import Contact from "./Contact";
 import Story from "./Story";
+import FeaturedProducts from "./FeaturedProducts";
+import Loading from "./Loading";
+import Error from "./Error";
+import Product from "./Product";
 import Footer from "./Footer";
 
 export {
@@ -18,6 +22,10 @@ export {
   Hero,
   Story,
   Services,
+  FeaturedProducts,
+  Loading,
+  Error,
+  Product,
   Contact,
   Footer,
 };
