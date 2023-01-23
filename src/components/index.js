@@ -11,6 +11,8 @@ import FeaturedProducts from "./FeaturedProducts";
 import Loading from "./Loading";
 import Error from "./Error";
 import Product from "./Product";
+import AddToCart from "./AddToCart";
+import ProductImages from "./ProductImages";
 import Footer from "./Footer";
 
 export {
@@ -26,6 +28,8 @@ export {
   Loading,
   Error,
   Product,
+  AddToCart,
+  ProductImages,
   Contact,
   Footer,
 };
