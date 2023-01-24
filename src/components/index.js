@@ -14,6 +14,11 @@ import Product from "./Product";
 import AddToCart from "./AddToCart";
 import ProductImages from "./ProductImages";
 import AmountButtons from "./AmountButtons";
+import Filters from "./Filters";
+import Sort from "./Sort";
+import ProductsList from "./ProductsList";
+import GridView from "./GridView";
+import ListView from "./ListView";
 import Footer from "./Footer";
 
 export {
@@ -32,6 +37,11 @@ export {
   AddToCart,
   ProductImages,
   AmountButtons,
+  Filters,
+  Sort,
+  ProductsList,
+  GridView,
+  ListView,
   Contact,
   Footer,
 };
