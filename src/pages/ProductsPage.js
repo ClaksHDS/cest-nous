@@ -7,14 +7,15 @@ function ProductsPage() {
   return (
     <main>
       <PageHero title='Produits' />
-      <Wrapper className='page'></Wrapper>
-      <div className='section-center products'>
-        <Filters />
-      </div>
-      <div>
-        <Sort />
-        <ProductsList />
-      </div>
+      <Wrapper className='page'>
+        <div className='section-center products'>
+          <Filters />
+          <div>
+            <Sort />
+            <ProductsList />
+          </div>
+        </div>
+      </Wrapper>
     </main>
   );
 }

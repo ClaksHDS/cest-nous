@@ -5,7 +5,7 @@ import { useFilterContext } from "../context/filter_context";
 import { formatPrice } from "../utils/helpers";
 
 const Filters = () => {
-  return <div>Filters</div>;
+  return <Wrapper>Filters</Wrapper>;
 };
 
 /* Styles */
@@ -18,10 +18,9 @@ const Wrapper = styled.section`
   }
   .search-input {
     padding: 0.5rem;
-    background: var(--clr-grey-10);
-    border-radius: var(--radius);
+    background: var(--backgroundColor);
+    border-radius: var(--borderRadius);
     border-color: transparent;
-    letter-spacing: var(--spacing);
   }
   .search-input::placeholder {
     text-transform: capitalize;
@@ -34,16 +33,15 @@ const Wrapper = styled.section`
     background: transparent;
     border: none;
     border-bottom: 1px solid transparent;
-    letter-spacing: var(--spacing);
-    color: var(--clr-grey-5);
+    color: var(--textColor);
     cursor: pointer;
   }
   .active {
-    border-color: var(--clr-grey-5);
+    border-color: var(--headlineColor);
   }
   .company {
-    background: var(--clr-grey-10);
-    border-radius: var(--radius);
+    background: var(--backgroundColor);
+    border-radius: var(--borderRadius);
     border-color: transparent;
     padding: 0.25rem;
   }
@@ -66,7 +64,7 @@ const Wrapper = styled.section`
     justify-content: center;
     svg {
       font-size: 0.5rem;
-      color: var(--clr-white);
+      color: var(--headlineColor);
     }
   }
   .all-btn {
@@ -94,10 +92,10 @@ const Wrapper = styled.section`
     font-size: 1rem;
   }
   .clear-btn {
-    background: var(--clr-red-dark);
-    color: var(--clr-white);
+    background: var(--headlineColor);
+    color: var(--backgroundColor);
     padding: 0.25rem 0.5rem;
-    border-radius: var(--radius);
+    border-radius: var(--borderRadius);
   }
   @media (min-width: 768px) {
     .content {
