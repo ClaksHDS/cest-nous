@@ -2,8 +2,48 @@ import React from "react";
 import styled from "styled-components";
 /* Context */
 import { useFilterContext } from "../context/filter_context";
+/* React Icons */
+import { BsList, BsGrid3X3GapFill } from "react-icons/bs";
+
 const Sort = () => {
-  return <Wrapper>Sort</Wrapper>;
+  const {
+    filtered_products: products,
+    grid_view,
+    setGridView,
+    setListView,
+  } = useFilterContext();
+
+  return (
+    <Wrapper>
+      <div className='btn-container'>
+        <button
+          type='button'
+          className={`${grid_view ? "active" : null}`}
+          onClick={setGridView}
+        >
+          <BsGrid3X3GapFill />
+        </button>
+        <button
+          type='button'
+          className={`${!grid_view ? "active" : null}`}
+          onClick={setListView}
+        >
+          <BsList />
+        </button>
+      </div>
+      <p>{products.length} produits trouvés</p>
+      <hr />
+      <form>
+        <label htmlFor='sort'>trier par</label>
+        <select name='sort' id='sort' className='sort-input'>
+          <option value='price-lowest'>prix décroissant</option>
+          <option value='price-highest'>prix croissant</option>
+          <option value='name-a'>produit (a-z)</option>
+          <option value='name-z'>produit (z-a)</option>
+        </select>
+      </form>
+    </Wrapper>
+  );
 };
 
 const Wrapper = styled.section`
@@ -52,7 +92,7 @@ const Wrapper = styled.section`
     }
     .active {
       background: var(--secondaryColor);
-      color: var(--textColor);
+      color: var(--backgroundColor);
     }
   }
   .sort-input {
