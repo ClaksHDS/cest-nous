@@ -13,6 +13,7 @@ import Error from "./Error";
 import Product from "./Product";
 import AddToCart from "./AddToCart";
 import ProductImages from "./ProductImages";
+import AmountButtons from "./AmountButtons";
 import Footer from "./Footer";
 
 export {
@@ -30,6 +31,7 @@ export {
   Product,
   AddToCart,
   ProductImages,
+  AmountButtons,
   Contact,
   Footer,
 };

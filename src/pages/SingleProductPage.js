@@ -75,11 +75,11 @@ function SingleProductPage() {
             <h5>{formatPrice(price)}</h5>
             <p className='description'>{description}</p>
             <p className='info'>
-              <span>Disponible : </span>
-              {stock > 0 ? "Disponible" : "Indisponible"}
+              <span>Disponibité : </span>
+              {stock > 0 ? "En Stock" : "Indisponible"}
             </p>
             <hr />
-            {stock > 0 && <AddToCart />}
+            {stock > 0 && <AddToCart singleProduct={singleProduct} />}
           </section>
         </div>
       </div>
