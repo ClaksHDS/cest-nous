@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 /* Context */
 import { useFilterContext } from "../context/filter_context";
-import { formatPrice } from "../utils/helpers";
+import { formatPrice, getUniqueValues } from "../utils/helpers";
 
 const Filters = () => {
   const {
@@ -11,6 +11,9 @@ const Filters = () => {
     clearFilters,
     all_products,
   } = useFilterContext();
+
+  const categories = getUniqueValues(all_products, "category");
+  const companies = getUniqueValues(all_products, "company");
 
   return (
     <Wrapper>
@@ -53,6 +56,7 @@ const Wrapper = styled.section`
   }
   .search-input::placeholder {
     text-transform: capitalize;
+    color: var(--textColor);
   }
   button {
     display: block;
@@ -112,14 +116,7 @@ const Wrapper = styled.section`
   .price {
     margin-bottom: 0.25rem;
   }
-  .shipping {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    text-transform: capitalize;
-    column-gap: 0.5rem;
-    font-size: 1rem;
-  }
+
   .clear-btn {
     background: var(--headlineColor);
     color: var(--backgroundColor);
