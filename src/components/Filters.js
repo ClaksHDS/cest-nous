@@ -5,7 +5,36 @@ import { useFilterContext } from "../context/filter_context";
 import { formatPrice } from "../utils/helpers";
 
 const Filters = () => {
-  return <Wrapper>Filters</Wrapper>;
+  const {
+    filters: { text, category, company, min_price, max_price, price },
+    updateFilters,
+    clearFilters,
+    all_products,
+  } = useFilterContext();
+
+  return (
+    <Wrapper>
+      <div className='content'>
+        <form onSubmit={(e) => e.preventDefault()}>
+          {/* Search Input */}
+          <div className='form-control'>
+            <input
+              type='text'
+              name='text'
+              className='search-input'
+              placeholder='rechercher un produit'
+              clearFilters='search-input'
+              value={text}
+              onChange={updateFilters}
+            />
+          </div>
+          {/* Search Input */}
+          {/* Search Input */}
+          {/* Search Input */}
+        </form>
+      </div>
+    </Wrapper>
+  );
 };
 
 /* Styles */
