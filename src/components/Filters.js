@@ -25,7 +25,7 @@ const Filters = () => {
               type='text'
               name='text'
               className='search-input'
-              placeholder='rechercher un produit'
+              placeholder='rechercher'
               clearFilters='search-input'
               value={text}
               onChange={updateFilters}
@@ -52,8 +52,21 @@ const Filters = () => {
               })}
             </div>
           </div>
-          {/* Search Input */}
-          {/* Search Input */}
+          {/* Companies Filter */}
+          <div className='form-control'>
+            <h5>Gamme</h5>
+            <select
+              name='company'
+              value={company}
+              onChange={updateFilters}
+              className='company'
+            >
+              {companies.map((cie, index) => {
+                return <option key={index}>{cie}</option>;
+              })}
+            </select>
+          </div>
+          {/* Range Price Filter */}
         </form>
       </div>
     </Wrapper>
