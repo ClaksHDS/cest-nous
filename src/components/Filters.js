@@ -99,7 +99,7 @@ const Wrapper = styled.section`
   }
   .search-input {
     padding: 0.5rem;
-    background: var(--backgroundColor);
+    background: var(--cardBackground);
     border-radius: var(--borderRadius);
     border-color: transparent;
   }
