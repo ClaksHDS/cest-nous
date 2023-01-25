@@ -80,6 +80,10 @@ const Filters = () => {
             />
           </div>
         </form>
+        {/* Clear Filters */}
+        <button type='button' className='clear-btn' onClick={clearFilters}>
+          tout effacer
+        </button>
       </div>
     </Wrapper>
   );
@@ -123,45 +127,10 @@ const Wrapper = styled.section`
     border-color: transparent;
     padding: 0.25rem;
   }
-  .colors {
-    display: flex;
-    align-items: center;
-  }
-  .color-btn {
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background: #222;
-    margin-right: 0.5rem;
-    border: none;
-    cursor: pointer;
-    opacity: 0.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    svg {
-      font-size: 0.5rem;
-      color: var(--headlineColor);
-    }
-  }
-  .all-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 0.5rem;
-    opacity: 0.5;
-  }
-  .active {
-    opacity: 1;
-  }
-  .all-btn .active {
-    text-decoration: underline;
-  }
+
   .price {
     margin-bottom: 0.25rem;
   }
-
   .clear-btn {
     background: var(--headlineColor);
     color: var(--backgroundColor);
