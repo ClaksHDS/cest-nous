@@ -17,21 +17,21 @@ const PageHero = ({ title, singleProduct }) => {
 
 /* Styles */
 const Wrapper = styled.section`
-  background: var(--secondaryColor);
+  background: var(--headlineColor);
   width: 100%;
   min-height: 20vh;
   display: flex;
   align-items: center;
-  color: var(--textColor);
+  color: var(--backgroundColor);
   a {
-    color: var(--textColor);
+    color: var(--backgroundColor);
     padding: 0.5rem;
     text-decoration: none;
     text-transform: capitalize;
     transition: var(--transition);
   }
   a:hover {
-    color: var(--headlineColor);
+    text-decoration: underline;
   }
 `;
 
