@@ -1,4 +1,6 @@
+import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+
 /* Images for the carousel*/
 import alambic from "../assets/images/alambic.webp";
 import baies from "../assets/images/baies.webp";

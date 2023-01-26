@@ -5,21 +5,33 @@ import App from "./App";
 import { ProductsProvider } from "./context/products_context";
 import { FilterProvider } from "./context/filter_context";
 import { CartProvider } from "./context/cart_context";
+import { Auth0Provider } from "@auth0/auth0-react";
 
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
+// domain : dev-jnfv6hxx.eu.auth0.com
+// clientId : qN9qv8ASM7V3hH7I6O9A6g2gTkrOyP7x
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <ProductsProvider>
-    <FilterProvider>
-      <CartProvider>
-        <App />
-      </CartProvider>
-    </FilterProvider>
-  </ProductsProvider>
+  <Auth0Provider
+    domain={process.env.REACT_APP_AUTH_DOMAIN}
+    clientId={process.env.REACT_APP_CLIENT_ID}
+    authorizationParams={{
+      redirect_uri: window.location.origin,
+      cacheLocation: "localstorage",
+    }}
+  >
+    <ProductsProvider>
+      <FilterProvider>
+        <CartProvider>
+          <App />
+        </CartProvider>
+      </FilterProvider>
+    </ProductsProvider>
+  </Auth0Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
