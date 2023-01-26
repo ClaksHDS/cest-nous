@@ -20,6 +20,9 @@ import ProductsList from "./ProductsList";
 import GridView from "./GridView";
 import ListView from "./ListView";
 import CartContent from "./CartContent";
+import CartColumns from "./CartColumns";
+import CartItem from "./CartItem";
+import CartTotals from "./CartTotals";
 import Footer from "./Footer";
 
 export {
@@ -44,6 +47,9 @@ export {
   GridView,
   ListView,
   CartContent,
+  CartColumns,
+  CartItem,
+  CartTotals,
   Contact,
   Footer,
 };
