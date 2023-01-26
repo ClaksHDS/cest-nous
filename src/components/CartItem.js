@@ -12,9 +12,13 @@ import { BsTrash } from "react-icons/bs";
 const CartItem = ({ id, image, name, price, amount }) => {
   const { removeItem, toggleAmount } = useCartContext();
 
-  const increase = () => {};
+  const increase = () => {
+    toggleAmount(id, "inc");
+  };
 
-  const decrease = () => {};
+  const decrease = () => {
+    toggleAmount(id, "dec");
+  };
 
   return (
     <Wrapper>
