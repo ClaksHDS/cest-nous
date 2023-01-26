@@ -22,6 +22,7 @@ function CartPage() {
       </Wrapper>
     );
   }
+  // items in the cart
   return (
     <main>
       <PageHero title='Panier'></PageHero>
