@@ -7,7 +7,35 @@ import {
 } from "../actions";
 
 const cart_reducer = (state, action) => {
-  return state;
+  if (action.type === ADD_TO_CART) {
+    const { id, amount, singleProduct } = action.payload;
+    const tempItem = state.cart.find((item) => item.id === id);
+    if (tempItem) {
+      const tempCart = state.cart.map((cartItem) => {
+        if (cartItem.id === id) {
+          let newAmount = cartItem.amount + amount;
+          if (newAmount > cartItem.max) {
+            newAmount = cartItem.max;
+          }
+          return { ...cartItem, amount: newAmount };
+        } else {
+          return cartItem;
+        }
+      });
+      return { ...state, cart: tempCart };
+    } else {
+      const newItem = {
+        id: id,
+        name: singleProduct.name,
+        amount,
+        image: singleProduct.images[0].url,
+        price: singleProduct.price,
+        max: singleProduct.stock,
+      };
+      return { ...state, cart: [...state.cart, newItem] };
+    }
+  }
+
   throw new Error(`No Matching "${action.type}" - action type`);
 };
 

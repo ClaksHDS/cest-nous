@@ -19,6 +19,7 @@ import Sort from "./Sort";
 import ProductsList from "./ProductsList";
 import GridView from "./GridView";
 import ListView from "./ListView";
+import CartContent from "./CartContent";
 import Footer from "./Footer";
 
 export {
@@ -42,6 +43,7 @@ export {
   ProductsList,
   GridView,
   ListView,
+  CartContent,
   Contact,
   Footer,
 };

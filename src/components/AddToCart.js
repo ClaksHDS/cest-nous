@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 /* Context */
+import { useCartContext } from "../context/cart_context";
 /* Components */
 import AmountButtons from "./AmountButtons";
 
 function AddToCart({ singleProduct }) {
+  const { addToCart } = useCartContext();
   const { id, stock } = singleProduct;
 
   const [amount, setAmount] = useState(1);
@@ -38,7 +40,11 @@ function AddToCart({ singleProduct }) {
           increase={increase}
           decrease={decrease}
         />
-        <Link to='/cart' className='btn'>
+        <Link
+          to='/cart'
+          className='btn'
+          onClick={() => addToCart(id, amount, singleProduct)}
+        >
           Ajouter au panier
         </Link>
       </div>
