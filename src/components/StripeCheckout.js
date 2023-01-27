@@ -7,15 +7,62 @@ import { useCartContext } from "../context/cart_context";
 import { useUserContext } from "../context/user_context";
 /* Helpers */
 import { formatPrice } from "../utils/helpers";
+/* Stripe  */
+import { loadStripe } from "@stripe/stripe-js";
+import {
+  CardElement,
+  useStripe,
+  Elements,
+  useElements,
+} from "@stripe/react-stripe-js";
+
+const promise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
 
 const CheckoutForm = () => {
+  // State variables
+  const {
+    cart,
+    total_amount,
+    shipping_mondial_relay,
+    clearCart,
+  } = useCartContext();
+  const { myUser } = useUserContext();
+  const navigate = useNavigate();
+  // Stripe
+  const [succeeded, setSucceeded] = useState(false);
+  const [error, setError] = useState(null);
+  const [processing, setProcessing] = useState("");
+  const [disabled, setDisabled] = useState(true);
+  const [clientSecret, setClientSecret] = useState("");
+  const stripe = useStripe();
+  const elements = useElements();
+
+  const cardStyle = {
+    style: {
+      base: {
+        color: "#32325d",
+        fontFamily: "Arial, sans-serif",
+        fontSmoothing: "antialiased",
+        fontSize: "16px",
+        "::placeholder": {
+          color: "#32325d",
+        },
+      },
+      invalid: {
+        color: "#fa755a",
+        iconColor: "#fa755a",
+      },
+    },
+  };
   return <h2>hello from Stripe checkout</h2>;
 };
 
 const StripeCheckout = () => {
   return (
     <Wrapper>
-      <CheckoutForm />
+      <Elements stripe={promise}>
+        <CheckoutForm />
+      </Elements>
     </Wrapper>
   );
 };
