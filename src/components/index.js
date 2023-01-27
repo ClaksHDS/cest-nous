@@ -23,6 +23,7 @@ import CartContent from "./CartContent";
 import CartColumns from "./CartColumns";
 import CartItem from "./CartItem";
 import CartTotals from "./CartTotals";
+import StripeCheckout from "./StripeCheckout";
 import Footer from "./Footer";
 
 export {
@@ -51,5 +52,6 @@ export {
   CartItem,
   CartTotals,
   Contact,
+  StripeCheckout,
   Footer,
 };
