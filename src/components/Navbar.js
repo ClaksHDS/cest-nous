@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 /* Context */
 import { useProductsContext } from "../context/products_context";
+import { useUserContext } from "../context/user_context";
 /* Assets */
 import logo from "../assets/logo.webp";
 import { links } from "../utils/data";
@@ -13,6 +14,8 @@ import { BiMenu } from "react-icons/bi";
 
 const NavLinks = () => {
   const { openSidebar } = useProductsContext();
+  const { myUser } = useUserContext();
+
   return (
     <NavContainer>
       <div className='nav-center'>
@@ -33,6 +36,11 @@ const NavLinks = () => {
               </li>
             );
           })}
+          {myUser && (
+            <li>
+              <Link to='/checkout'>paiement</Link>
+            </li>
+          )}
         </ul>
         <CartButtons />
       </div>

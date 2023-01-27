@@ -8,11 +8,13 @@ import { links } from "../utils/data";
 import CartButtons from "./CartButtons";
 /* Context */
 import { useProductsContext } from "../context/products_context";
+import { useUserContext } from "../context/user_context";
 /* React icons */
 import { IoCloseOutline } from "react-icons/io5";
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useProductsContext();
+  const { myUser } = useUserContext();
 
   return (
     <Wrapper>
@@ -36,11 +38,13 @@ const Sidebar = () => {
               </li>
             );
           })}
-          <li>
-            <Link to='/checkout' onClick={closeSidebar}>
-              checkout
-            </Link>
-          </li>
+          {myUser && (
+            <li>
+              <Link to='/checkout' onClick={closeSidebar}>
+                paiement
+              </Link>
+            </li>
+          )}
         </ul>
         <CartButtons />
       </aside>
