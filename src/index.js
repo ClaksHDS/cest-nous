@@ -12,8 +12,6 @@ import { Auth0Provider } from "@auth0/auth0-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
-// domain : dev-jnfv6hxx.eu.auth0.com
-// clientId : qN9qv8ASM7V3hH7I6O9A6g2gTkrOyP7x
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

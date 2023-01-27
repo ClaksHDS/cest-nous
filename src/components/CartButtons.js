@@ -4,14 +4,16 @@ import styled from "styled-components";
 /* Context */
 import { useProductsContext } from "../context/products_context";
 import { useCartContext } from "../context/cart_context";
+import { useUserContext } from "../context/user_context";
 /* Assets */
 import { navButtons } from "../utils/data";
 /* React icons */
-import { BsBasket2, BsPerson } from "react-icons/bs";
+import { BsBasket2, BsPersonPlus, BsPersonX } from "react-icons/bs";
 
 const CartButtons = () => {
   const { closeSidebar } = useProductsContext();
   const { total_items } = useCartContext();
+  const { loginWithRedirect, myUser, logout } = useUserContext();
   return (
     <Wrapper className='cart-btn-wrapper'>
       <Link to='/cart' className='cart-btn' onClick={closeSidebar}>
@@ -21,9 +23,25 @@ const CartButtons = () => {
           <span className='cart-value'>{total_items}</span>
         </span>
       </Link>
-      <button type='button' className='auth-btn'>
-        Login <BsPerson />
-      </button>
+      {myUser ? (
+        <button
+          type='button'
+          className='auth-btn'
+          onClick={() => logout({ returnTo: window.location.origin })}
+        >
+          Déconnexion
+          <span>
+            <BsPersonX />
+          </span>
+        </button>
+      ) : (
+        <button type='button' className='auth-btn' onClick={loginWithRedirect}>
+          Se connecter
+          <span>
+            <BsPersonPlus />
+          </span>
+        </button>
+      )}
     </Wrapper>
   );
 };
@@ -32,12 +50,16 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  width: 225px;
+  width: 325px;
   .cart-btn {
     color: var(--headlineColor);
     font-size: 1rem;
     display: flex;
     align-items: center;
+    text-decoration: none;
+    span {
+      font-size: 1.5rem;
+    }
   }
   .cart-container {
     display: flex;
@@ -73,6 +95,9 @@ const Wrapper = styled.div`
     color: var(--headlineColor);
     svg {
       margin-left: 5px;
+    }
+    span {
+      font-size: 1.5rem;
     }
   }
 `;
