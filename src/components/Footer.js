@@ -14,7 +14,7 @@ function Footer() {
               <a
                 href={url}
                 target='_blank'
-                rel='noreferrer'
+                rel='noopener noreferrer'
                 aria-label='links directing to our social media accounts'
               >
                 {icon}

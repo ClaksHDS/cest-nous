@@ -46,7 +46,7 @@ function AboutPage() {
           {bio.map((founder) => {
             const { id, founderName, bio, quote, img } = founder;
             return (
-              <section className='team-box'>
+              <section className='team-box' key={id}>
                 <div className='founder-img'>
                   <img src={img} alt={founderName} />
                   <div className='underline'></div>

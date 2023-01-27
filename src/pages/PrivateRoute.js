@@ -1,8 +1,6 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
-/* Context */
-import { useUserContext } from "../context/user_context";
 
 function PrivateRoute({ children }) {
   const { user } = useAuth0();

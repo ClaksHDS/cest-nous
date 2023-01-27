@@ -69,7 +69,7 @@ function SingleProductPage() {
         </Link>
         <div className='product-center'>
           <ProductImages images={images} />
-          <section className='content'>
+          <section className='content' key={sku}>
             <h2>{name}</h2>
             <h2>{company}</h2>
             <h5>{formatPrice(price)}</h5>

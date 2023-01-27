@@ -5,8 +5,6 @@ import styled from "styled-components";
 import { useProductsContext } from "../context/products_context";
 import { useCartContext } from "../context/cart_context";
 import { useUserContext } from "../context/user_context";
-/* Assets */
-import { navButtons } from "../utils/data";
 /* React icons */
 import { BsBasket2, BsPersonPlus, BsPersonX } from "react-icons/bs";
 

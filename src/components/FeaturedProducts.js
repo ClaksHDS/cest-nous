@@ -33,15 +33,18 @@ function FeaturedProducts() {
           return <Product key={product.id} {...product} />;
         })}
       </div>
+      <Link to='/products' className='btn products-btn'>
+        voir plus de produits
+      </Link>
     </Wrapper>
   );
 }
 
 /* Styles */
 const Wrapper = styled.section`
-  background: var(--headlineColor);
+  background: var(--cardBackground);
   h2 {
-    color: var(--backgroundColor);
+    color: var(--headlineColor);
     text-transform: capitalize;
   }
   .underline {
@@ -51,6 +54,7 @@ const Wrapper = styled.section`
     margin: 4rem auto;
     display: grid;
     gap: 2.5rem;
+
     img {
       height: 225px;
     }
@@ -60,6 +64,13 @@ const Wrapper = styled.section`
     width: 148px;
     margin: 0 auto;
     text-align: center;
+  }
+  .products-btn {
+    background-color: var(--headlineColor);
+    color: var(--backgroundColor);
+  }
+  .products-btn:hover {
+    background: var(--secondaryColor);
   }
   @media (min-width: 576px) {
     .featured {
