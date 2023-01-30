@@ -11,7 +11,7 @@ function Hero() {
       <article className='content'>
         <h1>
           "meilleur gin français" <br />
-          <i>world gin awards 2019 & 2020</i>
+          <i>world gin awards 2019, 2020 et 2023</i>
           <br />
           micro distillerie en Normandie
         </h1>
