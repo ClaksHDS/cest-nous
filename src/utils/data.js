@@ -27,11 +27,6 @@ export const socialLinks = [
     url: "https://www.instagram.com/distilleriecestnous/",
     icon: <BsInstagram />,
   },
-  {
-    id: 3,
-    url: "#",
-    icon: <BsEnvelope />,
-  },
 ];
 
 /* Bio */

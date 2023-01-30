@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 /* Assets */
 import { socialLinks } from "../utils/data";
+/* React Icons */
+import { BsEnvelope } from "react-icons/bs";
 
 function Footer() {
   return (
@@ -16,12 +18,18 @@ function Footer() {
                 target='_blank'
                 rel='noopener noreferrer'
                 aria-label='links directing to our social media accounts'
+                title='visitez nos réseaux sociaux pour suivre notre actualité'
               >
                 {icon}
               </a>
             </li>
           );
         })}
+        <li>
+          <a href='mailto:info@cestnous-gin.com' title='écrivez-nous par mail'>
+            <BsEnvelope />
+          </a>
+        </li>
       </ul>
 
       <ul className='legal-links'>
@@ -54,6 +62,7 @@ const Wrapper = styled.footer`
       margin: 0 1rem;
       color: var(--backgroundColor);
       transition: var(--transition);
+      cursor: pointer;
     }
     a:hover {
       font-size: 1.5rem;
