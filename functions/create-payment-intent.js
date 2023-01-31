@@ -2,13 +2,11 @@
 const dotenv = require("dotenv");
 dotenv.config();
 
-const stripe = require("stripe")(process.env.REACT_APP_STRIPE_SECRET_KEY);
+const stripe = require("stripe")(`${process.env.REACT_APP_STRIPE_SECRET_KEY}`);
 
 exports.handler = async function(event, context) {
   if (event.body) {
-    const { cart, shipping_mondial_relay, total_amount } = JSON.parse(
-      event.body
-    );
+    const { shipping_mondial_relay, total_amount } = JSON.parse(event.body);
 
     const calculateOrderAmount = () => {
       return shipping_mondial_relay + total_amount;
@@ -17,7 +15,7 @@ exports.handler = async function(event, context) {
     try {
       const paymentIntent = await stripe.paymentIntents.create({
         amount: calculateOrderAmount(),
-        currency: "EUR",
+        currency: "eur",
       });
       return {
         statusCode: 200,
