@@ -15,12 +15,11 @@ function Hero() {
           className='hero-img'
           alt='banner presenting the different products of the distllery : awarded gin, vodka'
         />
-        {/* <img
+        {/*  <img
           src={banner}
           className='hero-img-big'
           alt='banner presenting the different products of the distllery : gin, vodka, ginfusions, cold-brew, rhums'
         /> */}
-
         <Link to='/products' className='btn hero-btn'>
           découvrez nos spiritueux
         </Link>
@@ -50,6 +49,7 @@ const Wrapper = styled.section`
     overflow: hidden;
     width: 90%;
   }
+
   .hero-btn {
     background: var(--headlineColor);
     color: var(--backgroundColor);
