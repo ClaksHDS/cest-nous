@@ -41,6 +41,7 @@ function Hero() {
 
 /* Styles */
 const Wrapper = styled.section`
+  background: #fcfaf7;
   .content {
     display: flex;
     justify-content: center;
@@ -48,61 +49,37 @@ const Wrapper = styled.section`
     flex-direction: column;
     text-align: center;
     width: 100%;
-    height: 90vh; /* if you don't want it to take up the full screen, reduce this number */
+    height: 90vh;
     overflow: hidden;
     scroll-behavior: smooth;
     margin: 0 auto;
   }
   .hero-img {
-    object-fit: cover;
-
+    object-fit: contain;
     justify-content: center;
     overflow: hidden;
   }
   .hero-btn {
     background: var(--headlineColor);
     color: var(--backgroundColor);
-    margin-top: 2rem;
+    margin: 3rem;
     transition: var(--transition);
   }
   .hero-btn:hover {
     background: var(--secondaryColor);
   }
-  /*  h1 {
-    line-height: 2;
-    text-transform: capitalize;
-    color: var(--headlineColor);
-  }
-  
-  .img-container {
-    display: none;
-  }
-  p {
-    line-height: 2;
-    max-width: 45em;
-    margin-bottom: 2rem;
-    color: var(--textColor);
-    font-size: 1rem;
-  } */
   @media (min-width: 992px) {
     height: calc(100vh - 6rem);
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    /* h1 {
-      margin-bottom: 2rem;
-      line-height: 1.5;
+    .hero-img {
+      object-fit: cover;
     }
-    p {
-      font-size: 1.25rem;
-    } */
+
     .hero-btn {
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
     }
-    /* .img-container {
-      display: block;
-      position: relative;
-    } */
   }
 `;
 
