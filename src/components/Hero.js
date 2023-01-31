@@ -4,36 +4,26 @@ import { Link } from "react-router-dom";
 /* Assets */
 import logo from "../assets/logo.webp";
 import banner from "../assets/banner.png";
+import bannerSmall from "../assets/banner-small-screen.png";
 
 function Hero() {
   return (
     <Wrapper>
       <article className='content'>
         <img
-          src={banner}
+          src={bannerSmall}
           className='hero-img'
-          alt='banner presenting the different products of the distllery : gin, vodka, ginfusions, cold-brew, rhums'
+          alt='banner presenting the different products of the distllery : awarded gin, vodka'
         />
-        <Link to='/products' className='btn hero-btn'>
-          découvrez nos spiritueux
-        </Link>
-
-        {/* <h1>
-          "meilleur gin français" <br />
-          <i>world gin awards 2019, 2020 et 2023</i>
-          <br />
-          micro distillerie en Normandie
-        </h1>
-        <Link to='/products' className='btn hero-btn'>
-          découvrez nos spiritueux
-        </Link>
-      </article>
-      <article className='img-container'>
-        <img
-          src={logo}
-          alt="logo distillerie c'est nous"
-          className='accent-img'
+        {/* <img
+          src={banner}
+          className='hero-img-big'
+          alt='banner presenting the different products of the distllery : gin, vodka, ginfusions, cold-brew, rhums'
         /> */}
+
+        <Link to='/products' className='btn hero-btn'>
+          découvrez nos spiritueux
+        </Link>
       </article>
     </Wrapper>
   );
@@ -58,6 +48,7 @@ const Wrapper = styled.section`
     object-fit: contain;
     justify-content: center;
     overflow: hidden;
+    width: 90%;
   }
   .hero-btn {
     background: var(--headlineColor);
@@ -73,7 +64,8 @@ const Wrapper = styled.section`
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     .hero-img {
-      object-fit: cover;
+      object-fit: contain;
+      width: 100%;
     }
 
     .hero-btn {
