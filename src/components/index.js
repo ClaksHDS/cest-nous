@@ -25,6 +25,7 @@ import CartItem from "./CartItem";
 import CartTotals from "./CartTotals";
 import StripeCheckout from "./StripeCheckout";
 import ContactForm from "./ContactForm";
+import MapAddress from "./MapAddress";
 import Footer from "./Footer";
 
 export {
@@ -55,5 +56,6 @@ export {
   Contact,
   StripeCheckout,
   ContactForm,
+  MapAddress,
   Footer,
 };

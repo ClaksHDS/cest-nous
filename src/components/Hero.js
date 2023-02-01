@@ -28,10 +28,11 @@ function Hero() {
             <i>"Gin awards 2023, 2020 et 2019"</i>
           </h4> */}
         </div>
-
-        <Link to='/products' className='btn hero-btn'>
-          découvrez nos spiritueux
-        </Link>
+        <div className='link-container'>
+          <Link to='/products' className='btn hero-btn'>
+            découvrez nos spiritueux
+          </Link>
+        </div>
       </article>
     </Wrapper>
   );
@@ -55,6 +56,10 @@ const Wrapper = styled.section`
     padding-top: 2rem;
     padding-bottom: 0;
   }
+  .link-container {
+    display: grid;
+    place-items: center;
+  }
 
   .hero-img-small {
     object-fit: cover;
@@ -72,7 +77,8 @@ const Wrapper = styled.section`
     text-align: center;
     background: var(--headlineColor);
     color: var(--backgroundColor);
-    margin: 3rem;
+    margin-bottom: 4rem;
+    padding: 0.75rem 1.5rem;
     transition: var(--transition);
   }
   .hero-btn:hover {
@@ -92,7 +98,7 @@ const Wrapper = styled.section`
     }
 
     .hero-btn {
-      padding: 0.75rem 1.5rem;
+      padding: 0.85rem 1.5rem;
       font-size: 1rem;
     }
   }

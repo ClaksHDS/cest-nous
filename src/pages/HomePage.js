@@ -6,6 +6,7 @@ import {
   Services,
   FeaturedProducts,
   Contact,
+  MapAddress,
 } from "../components";
 
 function HomePage() {
@@ -15,6 +16,8 @@ function HomePage() {
       <FeaturedProducts />
       <Story />
       <Services />
+      <MapAddress />
+
       <Contact />
     </main>
   );
