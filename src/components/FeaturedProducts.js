@@ -28,7 +28,7 @@ function FeaturedProducts() {
         <h2>notre sélection du moment</h2>
         <div className='underline'></div>
       </div>
-      <div className='section-center featured'>
+      <div className='section-centered featured'>
         {featured.slice(0, 3).map((product) => {
           return <Product key={product.id} {...product} />;
         })}
@@ -52,9 +52,12 @@ const Wrapper = styled.section`
   }
   .featured {
     margin: 4rem auto;
+    padding: 1rem 1.5rem;
     display: grid;
     gap: 2.5rem;
     color: var(--textColor);
+    background-color: var(--productCoverColor);
+    border-radius: var(--borderRadius);
 
     img {
       height: 225px;

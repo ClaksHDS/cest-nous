@@ -3,16 +3,16 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 /* Assets */
 import logo from "../assets/logo.webp";
-import banner from "../assets/banner-img-big.png";
-import bannerSmall from "../assets/banner-img-small.png";
+import banner from "../assets/banner.png";
+import bannerSmall from "../assets/banner-small-screen.png";
 
 function Hero() {
   return (
     <Wrapper>
       <article>
         <div className='content'>
-          <img src={logo} alt="logo distillerie c'est nous" className='logo' />
-          <h2>Micro Distillerie en Normandie</h2>
+          {/* <img src={logo} alt="logo distillerie c'est nous" className='logo' />
+          <h2>Micro Distillerie en Normandie</h2> */}
           <img
             src={bannerSmall}
             className='hero-img-small'
@@ -23,10 +23,10 @@ function Hero() {
             className='hero-img-big'
             alt='banner presenting the different products of the distillery : awarded gin, vodka'
           />
-          <h3>meilleur gin français</h3>
+          {/* <h3>meilleur gin français</h3>
           <h4>
             <i>"Gin awards 2023, 2020 et 2019"</i>
-          </h4>
+          </h4> */}
         </div>
 
         <Link to='/products' className='btn hero-btn'>
