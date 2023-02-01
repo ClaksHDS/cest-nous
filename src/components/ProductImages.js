@@ -33,7 +33,7 @@ const Wrapper = styled.section`
     width: 100%;
     display: block;
     border-radius: var(--borderRadius);
-    object-fit: cover;
+    object-fit: contain;
   }
   .gallery {
     margin-top: 1rem;
