@@ -73,6 +73,7 @@ const Wrapper = styled.footer`
     font-weight: 400;
     text-transform: none;
     line-height: 1.25;
+    color: var(--backgroundColor);
   }
   .legal-links {
     display: flex;
