@@ -42,7 +42,7 @@ function AddToCart({ singleProduct }) {
         />
         <Link
           to='/cart'
-          className='btn'
+          className='btn add-to-cart'
           onClick={() => addToCart(id, amount, singleProduct)}
         >
           Ajouter au panier
@@ -66,6 +66,9 @@ const Wrapper = styled.section`
   }
   .btn:hover {
     background-color: var(--secondaryColor);
+  }
+  .add-to-cart {
+    text-align: center;
   }
 `;
 export default AddToCart;
