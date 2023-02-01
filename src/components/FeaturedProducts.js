@@ -54,9 +54,11 @@ const Wrapper = styled.section`
     margin: 4rem auto;
     display: grid;
     gap: 2.5rem;
+    color: var(--textColor);
 
     img {
       height: 225px;
+      object-fit: contain;
     }
   }
   .btn {

@@ -8,12 +8,14 @@ const ListView = ({ products }) => {
   return (
     <Wrapper>
       {products.map((product) => {
-        const { id, image, name, price, description } = product;
+        const { id, image, name, company, price, description } = product;
         return (
           <article key={id}>
             <img src={image} alt={name} />
             <div>
-              <h4>{name}</h4>
+              <h4>
+                {name} - {company}
+              </h4>
               <h5>{formatPrice(price)}</h5>
               <p>{description.substring(0, 150)}...</p>
               <Link to={`/products/${id}`} className='btn'>
@@ -39,6 +41,7 @@ const Wrapper = styled.section`
     object-fit: cover;
     border-radius: var(--borderRadius);
     margin-bottom: 1rem;
+    object-fit: contain;
   }
   h4 {
     margin-bottom: 0.5rem;

@@ -6,7 +6,7 @@ import { BsSearch } from "react-icons/bs";
 /* helpers */
 import { formatPrice } from "../utils/helpers";
 
-function Product({ id, image, name, price }) {
+function Product({ id, image, company, name, price }) {
   return (
     <Wrapper>
       <div className='container'>
@@ -16,7 +16,9 @@ function Product({ id, image, name, price }) {
         </Link>
       </div>
       <footer>
-        <h5>{name}</h5>
+        <h5>
+          {name} - {company}
+        </h5>
         <p>{formatPrice(price)}</p>
       </footer>
     </Wrapper>
@@ -27,7 +29,6 @@ function Product({ id, image, name, price }) {
 const Wrapper = styled.article`
   .container {
     position: relative;
-    background: var(--secondaryColor);
     border-radius: var(--borderRadius);
   }
   img {
@@ -68,16 +69,17 @@ const Wrapper = styled.article`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--backgroundColor);
+    color: var(--textColor);
   }
   footer h5,
   footer p {
     margin-bottom: 0;
-    font-weight: 400;
+    font-size: 18px;
     text-transform: capitalize;
   }
   footer p {
-    color: var(--backgroundColor);
+    color: var(--headlineColor);
+    font-weight: bold;
   }
 `;
 export default Product;
