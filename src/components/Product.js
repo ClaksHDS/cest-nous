@@ -69,7 +69,7 @@ const Wrapper = styled.article`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--textColor);
+    color: var(--headlineColor);
   }
   footer h5,
   footer p {
