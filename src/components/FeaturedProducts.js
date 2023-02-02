@@ -30,7 +30,11 @@ function FeaturedProducts() {
       </div>
       <div className='section-centered featured'>
         {featured.slice(0, 3).map((product) => {
-          return <Product key={product.id} {...product} />;
+          return (
+            <div className='product-container'>
+              <Product key={product.id} {...product} />
+            </div>
+          );
         })}
       </div>
       <Link to='/products' className='btn products-btn'>
@@ -42,7 +46,6 @@ function FeaturedProducts() {
 
 /* Styles */
 const Wrapper = styled.section`
-  background: var(--cardBackground);
   h2 {
     color: var(--headlineColor);
     text-transform: capitalize;
@@ -51,15 +54,16 @@ const Wrapper = styled.section`
     color: var(--backgroundColor);
   }
   .featured {
-    margin: 4rem auto;
-    padding: 1rem 1.5rem;
+    margin: 2rem auto;
+    padding: 2.5rem 1.5rem;
     display: grid;
     gap: 2.5rem;
     color: var(--textColor);
-    background-color: var(--productCoverColor);
-    border-radius: var(--borderRadius);
-    border-color: var(--headlineColor);
-
+    .product-container {
+      background-color: var(--productCoverColor);
+      border-radius: var(--borderRadius);
+      padding: 1rem;
+    }
     img {
       height: 225px;
       object-fit: contain;

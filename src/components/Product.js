@@ -10,7 +10,7 @@ function Product({ id, image, company, name, price }) {
   return (
     <Wrapper>
       <div className='container'>
-        <img src={image} alt={name} />
+        <img src={image} alt={name} tabIndex='0' />
         <Link to={`/products/${id}`} className='link'>
           <BsSearch />
         </Link>
