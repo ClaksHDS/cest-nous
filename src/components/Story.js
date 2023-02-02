@@ -45,7 +45,7 @@ function Story() {
 const Wrapper = styled.section`
   display: grid;
   gap: 2rem;
-  padding: 5rem 0;
+  padding: 2rem 0;
   h2 {
     text-align: center;
     text-transform: capitalize;
