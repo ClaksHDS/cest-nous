@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 /* Assets */
 import { socialLinks } from "../utils/data";
 /* React Icons */
@@ -31,15 +32,13 @@ function Footer() {
           </a>
         </li>
       </ul>
-
-      <ul className='legal-links'>
-        <li>mentions légales</li>
-        <li>trade contact</li>
-        <li>privacy policy</li>
-      </ul>
+      <Link to='/mentions-légales' className='nav-link'>
+        Mentions Légales
+      </Link>
       <p>
         &copy; {new Date().getFullYear()}
         <span> Distillerie C'est Nous</span>
+        {""} - micro distillerie en Normandie
       </p>
     </Wrapper>
   );
@@ -47,7 +46,7 @@ function Footer() {
 
 /* Component styles */
 const Wrapper = styled.footer`
-  height: 9rem;
+  height: 10rem;
   background: var(--headlineColor);
   text-align: center;
   color: var(--backgroundColor);
@@ -68,21 +67,17 @@ const Wrapper = styled.footer`
       font-size: 1.5rem;
     }
   }
+  .nav-link {
+    text-decoration: underline;
+    transition: var(--transition);
+  }
   p {
-    margin: 0.1rem;
+    margin: 0 auto;
+    padding: 1rem;
     font-weight: 400;
-    text-transform: none;
+    text-transform: capitalize;
     line-height: 1.25;
     color: var(--backgroundColor);
-  }
-  .legal-links {
-    display: flex;
-    justify-content: center;
-
-    li {
-      text-transform: capitalize;
-      padding-left: 2rem;
-    }
   }
 `;
 
