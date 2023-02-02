@@ -7,13 +7,6 @@ function Services() {
   return (
     <Wrapper>
       <div className='section-center'>
-        {/* <article className='header'>
-          <h3>Notre savoir faire</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis,
-            beatae!
-          </p>
-        </article> */}
         <div className='services-center'>
           {services.map((service) => {
             const { id, title, icon, desc } = service;
@@ -34,18 +27,12 @@ function Services() {
 
 /* Styles */
 const Wrapper = styled.section`
-  /* h3 {
-    color: var(--backgroundColor);
-  }*/
   h4 {
     color: var(--headlineColor);
     text-transform: capitalize;
   }
   padding: 2rem 0;
   background: var(--headlineColor);
-  .header h3 {
-    margin-bottom: 2rem;
-  }
   p {
     margin-bottom: 0;
     line-height: 1.8;
@@ -60,7 +47,7 @@ const Wrapper = styled.section`
     margin-right: auto;
   }
   .services-center {
-    margin-top: 4rem;
+    margin: 4rem;
     display: grid;
     gap: 2.5rem;
   }
@@ -87,21 +74,15 @@ const Wrapper = styled.section`
       font-size: 2rem;
     }
   }
-  @media (min-width: 992px) {
-    .header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  }
+
   @media (min-width: 576px) {
     .services-center {
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
     }
   }
-  @media (min-width: 1280px) {
-    padding: 0;
-    .section-center {
-      transform: translateY(5rem);
+  @media (min-width: 992px) {
+    .services-center {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 `;
