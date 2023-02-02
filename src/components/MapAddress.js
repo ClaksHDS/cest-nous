@@ -21,6 +21,7 @@ const MapAddress = () => {
             loading='lazy'
             referrerPolicy='no-referrer-when-downgrade'
             className='map'
+            title='distillery-map'
           ></iframe>
         </div>
         <div className='contact-container'>

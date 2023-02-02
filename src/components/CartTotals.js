@@ -32,11 +32,15 @@ const CartTotals = () => {
           </h4>
         </article>
         {myUser ? (
-          <Link to='/checkout' className='btn'>
+          <Link to='/checkout' className='btn' aria-label='pay your order'>
             procéder au paiement
           </Link>
         ) : (
-          <button className='btn' onClick={loginWithRedirect}>
+          <button
+            className='btn'
+            aria-label='login to the website to be able to pay'
+            onClick={loginWithRedirect}
+          >
             se connecter
           </button>
         )}

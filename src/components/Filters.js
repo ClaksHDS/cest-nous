@@ -42,6 +42,7 @@ const Filters = () => {
                     onClick={updateFilters}
                     type='button'
                     name='category'
+                    aria-label='select a category and it will display all the associated products'
                     className={`${
                       category === cat.toLowerCase() ? "active" : null
                     }`}
@@ -81,7 +82,12 @@ const Filters = () => {
           </div> */}
         </form>
         {/* Clear Filters */}
-        <button type='button' className='clear-btn' onClick={clearFilters}>
+        <button
+          type='button'
+          className='clear-btn'
+          aria-label='clear all the filters, allow you to start a new search based or not on the filters'
+          onClick={clearFilters}
+        >
           tout effacer
         </button>
       </div>
@@ -136,7 +142,6 @@ const Wrapper = styled.section`
     color: var(--backgroundColor);
     padding: 0.25rem 0.5rem;
     border-radius: var(--borderRadius);
-    transition: var(--transition);
   }
   @media (min-width: 768px) {
     .content {

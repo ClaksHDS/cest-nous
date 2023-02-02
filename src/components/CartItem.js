@@ -35,6 +35,7 @@ const CartItem = ({ id, image, name, price, amount }) => {
       <button
         type='button'
         className='remove-btn'
+        aria-label='remove the product from your cart'
         onClick={() => removeItem(id)}
       >
         <BsTrash />

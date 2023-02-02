@@ -11,7 +11,11 @@ function Product({ id, image, company, name, price }) {
     <Wrapper>
       <div className='container'>
         <img src={image} alt={name} tabIndex='0' />
-        <Link to={`/products/${id}`} className='link'>
+        <Link
+          to={`/products/${id}`}
+          aria-label="navigate to the selected product's page"
+          className='link'
+        >
           <BsSearch />
         </Link>
       </div>

@@ -25,7 +25,11 @@ function Contact() {
               placeholder='votre adresse mail'
               name='email'
             />
-            <button type='submit' className='submit-btn'>
+            <button
+              type='submit'
+              className='submit-btn'
+              aria-label='subscribe to the newsletter'
+            >
               inscrivez-vous
             </button>
           </form>

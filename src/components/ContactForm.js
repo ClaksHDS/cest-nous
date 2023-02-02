@@ -54,7 +54,11 @@ const ContactForm = () => {
           </label>
           <textarea class='form-textarea'>Ecrivez votre message</textarea>
         </div>
-        <button class='btn btn-block' type='submit'>
+        <button
+          class='btn btn-block'
+          aria-label="send your message to C'est Nous team"
+          type='submit'
+        >
           envoyer
         </button>
       </form>

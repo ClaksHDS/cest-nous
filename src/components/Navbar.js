@@ -23,7 +23,12 @@ const NavLinks = () => {
           <Link to='/' src={logo}>
             <img src={logo} alt="Logo Distillerie C'est Nous" />
           </Link>
-          <button type='button' className='nav-toggle' onClick={openSidebar}>
+          <button
+            type='button'
+            className='nav-toggle'
+            onClick={openSidebar}
+            aria-label='open sidebar'
+          >
             <BiMenu />
           </button>
         </div>

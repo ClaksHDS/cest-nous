@@ -43,6 +43,7 @@ function AddToCart({ singleProduct }) {
         <Link
           to='/cart'
           className='btn add-to-cart'
+          aria-label='add a product to the cart'
           onClick={() => addToCart(id, amount, singleProduct)}
         >
           Ajouter au panier

@@ -37,7 +37,11 @@ function FeaturedProducts() {
           );
         })}
       </div>
-      <Link to='/products' className='btn products-btn'>
+      <Link
+        to='/products'
+        className='btn products-btn'
+        aria-label='see more products and navigate to the products page'
+      >
         voir plus de produits
       </Link>
     </Wrapper>

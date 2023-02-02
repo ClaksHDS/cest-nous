@@ -14,9 +14,7 @@ import {
   useStripe,
   Elements,
   useElements,
-  PaymentElement,
 } from "@stripe/react-stripe-js";
-import { clear } from "@testing-library/user-event/dist/clear";
 
 const stripePromise = loadStripe(`${process.env.REACT_APP_STRIPE_PUBLIC_KEY}`);
 

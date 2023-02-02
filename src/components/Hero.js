@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 /* Assets */
-import logo from "../assets/logo.webp";
+
 import banner from "../assets/banner.png";
 import bannerSmall from "../assets/banner-small-screen.png";
 
@@ -11,8 +11,6 @@ function Hero() {
     <Wrapper>
       <article>
         <div className='content'>
-          {/* <img src={logo} alt="logo distillerie c'est nous" className='logo' />
-          <h2>Micro Distillerie en Normandie</h2> */}
           <img
             src={bannerSmall}
             className='hero-img-small'
@@ -23,13 +21,13 @@ function Hero() {
             className='hero-img-big'
             alt='banner presenting the different products of the distillery : awarded gin, vodka'
           />
-          {/* <h3>meilleur gin français</h3>
-          <h4>
-            <i>"Gin awards 2023, 2020 et 2019"</i>
-          </h4> */}
         </div>
         <div className='link-container'>
-          <Link to='/products' className='btn hero-btn'>
+          <Link
+            to='/products'
+            aria-label='see all the products and navigate to the products page'
+            className='btn hero-btn'
+          >
             découvrez nos spiritueux
           </Link>
         </div>
@@ -52,10 +50,7 @@ const Wrapper = styled.section`
     height: 90vh;
     margin: 0 auto;
   }
-  .logo {
-    padding-top: 2rem;
-    padding-bottom: 0;
-  }
+
   .link-container {
     display: grid;
     place-items: center;

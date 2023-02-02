@@ -24,6 +24,7 @@ const CartContent = () => {
         <button
           type='button'
           className='link-btn clear-btn'
+          aria-label='clear your cart'
           onClick={clearCart}
         >
           vider mon panier

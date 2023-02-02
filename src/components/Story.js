@@ -28,7 +28,11 @@ function Story() {
             sont à consommer comme <b>vous </b>les aimez.
           </p>
           <div className='btn-container'>
-            <Link to='/about' className='btn story-btn'>
+            <Link
+              to='/about'
+              aria-label="read more about the distillery's story and its founders, it navigates to the distillery page"
+              className='btn story-btn'
+            >
               en savoir plus
             </Link>
           </div>

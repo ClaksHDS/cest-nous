@@ -1,7 +1,7 @@
 import React from "react";
 
 /* import React Icons  */
-import { BsFacebook, BsInstagram, BsEnvelope } from "react-icons/bs";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
 
 import { FaGlassMartiniAlt, FaHandHoldingHeart, FaAward } from "react-icons/fa";
 

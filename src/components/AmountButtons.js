@@ -4,11 +4,21 @@ import styled from "styled-components";
 function AmountButtons({ increase, decrease, amount }) {
   return (
     <Wrapper className='amount-btns'>
-      <button type='button' className='amount-btn' onClick={decrease}>
+      <button
+        type='button'
+        className='amount-btn'
+        aria-label='remove one item'
+        onClick={decrease}
+      >
         -
       </button>
       <h2 className='amount'>{amount}</h2>
-      <button type='button' className='amount-btn' onClick={increase}>
+      <button
+        type='button'
+        className='amount-btn'
+        aria-label='add an item'
+        onClick={increase}
+      >
         +
       </button>
     </Wrapper>

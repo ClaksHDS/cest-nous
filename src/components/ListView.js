@@ -18,7 +18,11 @@ const ListView = ({ products }) => {
               </h4>
               <h5>{formatPrice(price)}</h5>
               <p>{description.substring(0, 150)}...</p>
-              <Link to={`/products/${id}`} className='btn'>
+              <Link
+                to={`/products/${id}`}
+                className='btn'
+                aria-label='read more about the product'
+              >
                 en lire plus
               </Link>
             </div>

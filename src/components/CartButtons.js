@@ -25,6 +25,7 @@ const CartButtons = () => {
         <button
           type='button'
           className='auth-btn'
+          aria-label='deconnect from the website'
           onClick={() => {
             clearCart();
             localStorage.removeItem("user");
@@ -37,7 +38,12 @@ const CartButtons = () => {
           </span>
         </button>
       ) : (
-        <button type='button' className='auth-btn' onClick={loginWithRedirect}>
+        <button
+          type='button'
+          className='auth-btn'
+          aria-label='login to the website and access to the payment page'
+          onClick={loginWithRedirect}
+        >
           Se connecter
           <span>
             <BsPersonPlus />
