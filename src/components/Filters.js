@@ -67,7 +67,7 @@ const Filters = () => {
             </select>
           </div>
           {/* Range Price Filter */}
-          <div className='form-control'>
+          {/* <div className='form-control'>
             <h5>prix</h5>
             <p className='price'>{formatPrice(price)}</p>
             <input
@@ -78,7 +78,7 @@ const Filters = () => {
               max={max_price}
               value={price}
             />
-          </div>
+          </div> */}
         </form>
         {/* Clear Filters */}
         <button type='button' className='clear-btn' onClick={clearFilters}>
