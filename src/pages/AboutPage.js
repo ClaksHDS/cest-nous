@@ -52,7 +52,6 @@ function AboutPage() {
                 </div>
                 <h3>{founderName}</h3>
                 <p>{bio}</p>
-
                 <p className='founder-quote'>"{quote}"</p>
               </section>
             );
