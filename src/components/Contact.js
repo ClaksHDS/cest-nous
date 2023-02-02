@@ -38,6 +38,7 @@ function Contact() {
 /* Styles */
 const Wrapper = styled.section`
   padding: 2rem 0;
+  margin: 2rem auto;
   h3 {
     text-transform: capitalize;
     padding-bottom: 1rem;
@@ -84,6 +85,7 @@ const Wrapper = styled.section`
     background: var(--secondaryColor);
   }
   @media (min-width: 992px) {
+    padding: 0;
     .content {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -96,7 +98,8 @@ const Wrapper = styled.section`
     }
   }
   @media (min-width: 1280px) {
-    padding: 15rem 0;
+    padding: 4rem;
+    margin-bottom: 2rem;
   }
 `;
 

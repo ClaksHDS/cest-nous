@@ -58,6 +58,7 @@ const Wrapper = styled.section`
     color: var(--textColor);
     background-color: var(--productCoverColor);
     border-radius: var(--borderRadius);
+    border-color: var(--headlineColor);
 
     img {
       height: 225px;
