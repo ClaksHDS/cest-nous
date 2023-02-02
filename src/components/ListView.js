@@ -62,6 +62,11 @@ const Wrapper = styled.section`
     font-size: 0.5rem;
     padding: 0.25rem 0.5rem;
     transition: var(--transition);
+    background: var(--headlineColor);
+    color: var(--backgroundColor);
+  }
+  .btn:hover {
+    background: var(--secondaryColor);
   }
   @media (min-width: 992px) {
     article {

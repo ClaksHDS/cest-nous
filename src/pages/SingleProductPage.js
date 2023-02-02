@@ -97,6 +97,13 @@ const Wrapper = styled.main`
   .price {
     color: var(--headlineColor);
   }
+  .btn {
+    background: var(--headlineColor);
+    color: var(--backgroundColor);
+  }
+  .btn:hover {
+    background: var(--secondaryColor);
+  }
   .desc {
     line-height: 2;
     max-width: 45em;

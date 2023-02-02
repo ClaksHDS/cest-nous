@@ -37,6 +37,13 @@ function CartPage() {
 const Wrapper = styled.main`
   .empty {
     text-align: center;
+    .btn {
+      background: var(--headlineColor);
+      color: var(--backgroundColor);
+    }
+    .btn:hover {
+      background: var(--secondaryColor);
+    }
     h2 {
       margin-bottom: 1rem;
       text-transform: none;
