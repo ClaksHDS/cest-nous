@@ -12,6 +12,7 @@ import {
   Products,
   PrivateRoute,
   AuthWrapper,
+  MentionLegalesPage,
 } from "./pages";
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='cart' element={<Cart />} />
           <Route path='products' element={<Products />} />
           <Route path='products/:id' element={<SingleProduct />} />
+          <Route path='mentions-légales' element={<MentionLegalesPage />} />
           <Route
             path='checkout'
             element={
