@@ -49,12 +49,10 @@ function AboutPage() {
               <section className='team-box' key={id}>
                 <div className='founder-img'>
                   <img src={img} alt={founderName} />
-                  <div className='underline'></div>
                 </div>
                 <h3>{founderName}</h3>
-                <hr />
                 <p>{bio}</p>
-                <hr />
+
                 <p className='founder-quote'>"{quote}"</p>
               </section>
             );
@@ -68,6 +66,17 @@ function AboutPage() {
 
 /* Styles */
 const Wrapper = styled.section`
+  .title {
+    text-align: center;
+  }
+
+  .title .underline {
+    width: 6rem;
+    height: 0.25rem;
+    background: var(--headlineColor);
+    margin-left: auto;
+    margin-right: auto;
+  }
   .story-container {
     display: grid;
     gap: 2rem;
