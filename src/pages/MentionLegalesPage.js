@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 /* Component */
 import { PageHero } from "../components";
+/* Assets */
+import logo from "../assets/logo.webp";
 
 const MentionLegalesPage = () => {
   return (
@@ -9,6 +11,7 @@ const MentionLegalesPage = () => {
       <PageHero title='Mentions Légales'></PageHero>
       <Wrapper className='page'>
         <section className='section-center policy-content'>
+          <img src={logo} alt="logo distillerie C'est Nous" />
           <h2>à propos de nous</h2>
           <p>
             Conditions générales de vente des produits vendus sur le site
@@ -126,6 +129,11 @@ const MentionLegalesPage = () => {
 
 /* Styles */
 const Wrapper = styled.main`
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .policy-content {
     margin: 3rem auto;
   }
