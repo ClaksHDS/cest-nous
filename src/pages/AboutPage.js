@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 /* Components */
-import { PageHero, Sliders, ContactForm } from "../components";
+import { PageHero, Sliders, ContactForm, ScrollButton } from "../components";
 /* Assets */
 import { bio } from "../utils/data";
 
@@ -58,6 +58,7 @@ function AboutPage() {
           })}
         </article>
         <ContactForm />
+        <ScrollButton />
       </Wrapper>
     </main>
   );

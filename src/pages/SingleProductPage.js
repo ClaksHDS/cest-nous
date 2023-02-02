@@ -14,6 +14,7 @@ import {
   PageHero,
   AddToCart,
   ProductImages,
+  ScrollButton,
 } from "../components";
 
 function SingleProductPage() {
@@ -82,6 +83,7 @@ function SingleProductPage() {
             {stock > 0 && <AddToCart singleProduct={singleProduct} />}
           </section>
         </div>
+        <ScrollButton />
       </div>
     </Wrapper>
   );

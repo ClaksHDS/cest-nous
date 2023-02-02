@@ -1,7 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 /* Components */
-import { PageHero, Filters, Sort, ProductsList } from "../components";
+import {
+  PageHero,
+  Filters,
+  Sort,
+  ProductsList,
+  ScrollButton,
+} from "../components";
 
 function ProductsPage() {
   return (
@@ -15,6 +21,7 @@ function ProductsPage() {
             <ProductsList />
           </div>
         </div>
+        <ScrollButton />
       </Wrapper>
     </main>
   );

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 /* Context */
 import { useCartContext } from "../context/cart_context";
 /* Components */
-import { PageHero, CartContent } from "../components";
+import { PageHero, CartContent, ScrollButton } from "../components";
 
 function CartPage() {
   const { cart } = useCartContext();
@@ -28,6 +28,7 @@ function CartPage() {
       <PageHero title='Panier'></PageHero>
       <Wrapper className='page'>
         <CartContent />
+        <ScrollButton />
       </Wrapper>
     </main>
   );

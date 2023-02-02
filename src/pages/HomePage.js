@@ -7,6 +7,7 @@ import {
   FeaturedProducts,
   Contact,
   MapAddress,
+  ScrollButton,
 } from "../components";
 
 function HomePage() {
@@ -17,8 +18,8 @@ function HomePage() {
       <Story />
       <Services />
       <MapAddress />
-
       <Contact />
+      <ScrollButton />
     </main>
   );
 }
