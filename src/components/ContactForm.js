@@ -117,6 +117,7 @@ const Wrapper = styled.aside`
     background: var(--headlineColor);
     display: inline-block;
     width: 100%;
+    transition: var(--transition);
   }
   .btn:hover {
     background: var(--secondaryColor);

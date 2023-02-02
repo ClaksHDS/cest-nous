@@ -37,6 +37,7 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--transition);
   }
   h2 {
     margin-bottom: 0;

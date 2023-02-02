@@ -68,12 +68,14 @@ const NavContainer = styled.nav`
     img {
       width: 95px;
       margin-left: -15px;
+      transition: var(--transition);
     }
   }
   .nav-toggle {
     background: transparent;
     border: transparent;
     color: var(--headlineColor);
+    transition: var(--transition);
     cursor: pointer;
     svg {
       font-size: 2.5rem;
@@ -108,6 +110,7 @@ const NavContainer = styled.nav`
         font-size: 1rem;
         text-transform: capitalize;
         text-decoration: none;
+        transition: var(--transition);
         padding: 0.5rem;
         &:hover {
           border-bottom: 1.75px solid var(--headlineColor);

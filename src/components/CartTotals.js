@@ -77,6 +77,7 @@ const Wrapper = styled.section`
     font-weight: 700;
     background: var(--headlineColor);
     color: var(--backgroundColor);
+    transition: var(--transition);
   }
   .btn:hover {
     background: var(--secondaryColor);

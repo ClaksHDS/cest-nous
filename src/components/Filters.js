@@ -136,6 +136,7 @@ const Wrapper = styled.section`
     color: var(--backgroundColor);
     padding: 0.25rem 0.5rem;
     border-radius: var(--borderRadius);
+    transition: var(--transition);
   }
   @media (min-width: 768px) {
     .content {

@@ -78,6 +78,7 @@ const Wrapper = styled.section`
   a {
     color: var(--headlineColor);
     font-weight: bold;
+    transition: var(--transition);
   }
   @media (min-width: 992px) {
     .contact-content {

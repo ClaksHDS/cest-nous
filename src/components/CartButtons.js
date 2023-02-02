@@ -59,6 +59,7 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     text-decoration: none;
+    transition: var(--transition);
     span {
       font-size: 1.5rem;
     }

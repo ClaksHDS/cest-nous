@@ -52,6 +52,7 @@ const Wrapper = styled.article`
     border-radius: 50%;
     transition: var(--transition);
     opacity: 0;
+    transition: var(--transition);
     cursor: pointer;
     svg {
       font-size: 1.25rem;

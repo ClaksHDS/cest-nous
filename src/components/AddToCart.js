@@ -63,6 +63,7 @@ const Wrapper = styled.section`
     width: 240px;
     background-color: var(--headlineColor);
     color: var(--backgroundColor);
+    transition: var(--transition);
   }
   .btn:hover {
     background-color: var(--secondaryColor);

@@ -78,6 +78,7 @@ const Wrapper = styled.section`
   .products-btn {
     background-color: var(--headlineColor);
     color: var(--backgroundColor);
+    transition: var(--transition);
   }
   .products-btn:hover {
     background: var(--secondaryColor);

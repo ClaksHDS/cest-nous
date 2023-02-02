@@ -49,6 +49,7 @@ const Wrapper = styled.section`
     background: var(--headlineColor);
     color: var(--backgroundColor);
     text-decoration: none;
+    transition: var(--transition);
     border-radius: var(--borderRadius);
     font-weight: 400;
     cursor: pointer;
@@ -59,6 +60,7 @@ const Wrapper = styled.section`
   }
   .clear-btn {
     background: var(--headlineColor);
+    transition: var(--transition);
   }
 `;
 export default CartContent;

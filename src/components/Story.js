@@ -66,6 +66,7 @@ const Wrapper = styled.section`
     transition: var(--transition);
     box-shadow: var(--shadow-1);
     padding: 0.55rem 2rem;
+    transition: var(--transition);
   }
   .story-btn:hover {
     background: var(--secondaryColor);

@@ -87,6 +87,7 @@ const Wrapper = styled.article`
       width: 1rem;
       height: 0.5rem;
       font-size: 0.75rem;
+      transition: var(--transition);
     }
     h2 {
       font-size: 1rem;
