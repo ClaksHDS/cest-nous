@@ -37,7 +37,7 @@ function Contact() {
 
 /* Styles */
 const Wrapper = styled.section`
-  padding: 5rem 0;
+  padding: 3rem 0;
   h3 {
     text-transform: capitalize;
     padding-bottom: 1rem;
