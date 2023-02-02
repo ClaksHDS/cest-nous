@@ -31,7 +31,8 @@ const MapAddress = () => {
             à nous contacter.
           </p>
           <p>
-            Écrivez-nous à{" "}
+            Par email :
+            <br />
             <a
               href='mailto:info@cestnous-gin.com'
               title='écrivez-nous par mail'
@@ -40,8 +41,9 @@ const MapAddress = () => {
             </a>
           </p>
           <p>
-            {" "}
-            <BsTelephoneOutbound /> <span>07-83-89-70-30</span>
+            Par téléphone directement :
+            <br />
+            <a href='tel:+33783897030'>07-83-89-70-30</a>
           </p>
           <hr />
         </div>
