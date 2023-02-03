@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-/* React Icons */
-import { BsTelephoneOutbound } from "react-icons/bs";
 
 const MapAddress = () => {
   return (
