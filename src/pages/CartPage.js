@@ -24,7 +24,7 @@ function CartPage() {
   }
   // items in the cart
   return (
-    <main>
+    <main role='main'>
       <PageHero title='Panier'></PageHero>
       <Wrapper className='page'>
         <CartContent />
@@ -42,7 +42,8 @@ const Wrapper = styled.main`
       background: var(--headlineColor);
       color: var(--backgroundColor);
     }
-    .btn:hover {
+    .btn:hover,
+    .btn:focus {
       background: var(--secondaryColor);
     }
     h2 {

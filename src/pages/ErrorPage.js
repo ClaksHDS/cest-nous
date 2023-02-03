@@ -6,7 +6,7 @@ import error from "../assets/error.png";
 
 function ErrorPage() {
   return (
-    <Wrapper className='page-100'>
+    <Wrapper className='page-100' role='main'>
       <section>
         <img src={error} alt='404 page not found' />
         <h1>page introuvable</h1>
@@ -59,7 +59,8 @@ const Wrapper = styled.main`
     border-radius: var(--borderRadius);
     border-color: transparent;
   }
-  .button:hover {
+  .button:hover,
+  .button:focus {
     color: var(--secondaryColor);
     background: var(--cardBackground);
   }

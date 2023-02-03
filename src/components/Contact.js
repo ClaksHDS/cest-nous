@@ -85,7 +85,8 @@ const Wrapper = styled.section`
     transition: var(--transition);
     color: var(--backgroundColor);
   }
-  .submit-btn:hover {
+  .submit-btn:hover,
+  .submit-btn:focus {
     background: var(--secondaryColor);
   }
   @media (min-width: 992px) {

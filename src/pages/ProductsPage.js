@@ -11,7 +11,7 @@ import {
 
 function ProductsPage() {
   return (
-    <main>
+    <main role='main'>
       <PageHero title='Produits' />
       <Wrapper className='page'>
         <div className='section-center products'>

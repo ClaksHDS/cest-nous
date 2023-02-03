@@ -17,10 +17,14 @@ const NavLinks = () => {
   const { myUser } = useUserContext();
 
   return (
-    <NavContainer>
+    <NavContainer role='navigation' aria-label='Menu principal'>
       <div className='nav-center'>
         <div className='nav-header'>
-          <Link to='/' src={logo}>
+          <Link
+            to='/'
+            src={logo}
+            aria-label="logo : navigue sur la page d'accueil"
+          >
             <img src={logo} alt="Logo Distillerie C'est Nous" />
           </Link>
           <button
@@ -43,7 +47,12 @@ const NavLinks = () => {
           })}
           {myUser && (
             <li>
-              <Link to='/checkout'>paiement</Link>
+              <Link
+                to='/checkout'
+                aria-label='Paiement : navigue vers la page de paiement'
+              >
+                paiement
+              </Link>
             </li>
           )}
         </ul>
@@ -117,7 +126,8 @@ const NavContainer = styled.nav`
         text-decoration: none;
         transition: var(--transition);
         padding: 0.5rem;
-        &:hover {
+        &:hover,
+        &:focus {
           border-bottom: 1.75px solid var(--headlineColor);
         }
       }

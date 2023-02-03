@@ -30,7 +30,7 @@ function Story() {
           <div className='btn-container'>
             <Link
               to='/about'
-              aria-label="read more about the distillery's story and its founders, it navigates to the distillery page"
+              aria-label='En savoir plus : Navigue vers la page présentant la distillerie et ses fondateurs'
               className='btn story-btn'
             >
               en savoir plus

@@ -21,7 +21,7 @@ const MapAddress = () => {
             loading='lazy'
             referrerPolicy='no-referrer-when-downgrade'
             className='map'
-            title='distillery-map'
+            title="Google Map : donne l'adresse de la distillerie C'est Nous"
           ></iframe>
         </div>
         <div className='contact-container'>
@@ -35,7 +35,7 @@ const MapAddress = () => {
             <br />
             <a
               href='mailto:info@cestnous-gin.com'
-              title='écrivez-nous par mail'
+              title='Écrivez-nous par mail'
             >
               info@cestnous-gin.com
             </a>

@@ -56,17 +56,18 @@ const Wrapper = styled.article`
     border-radius: 50%;
     transition: var(--transition);
     opacity: 0;
-    transition: var(--transition);
     cursor: pointer;
     svg {
       font-size: 1.25rem;
       color: var(--backgroundColor);
     }
   }
-  .container:hover img {
+  .container:hover img,
+  .container:focus img {
     opacity: 0.5;
   }
-  .container:hover .link {
+  .container:hover .link,
+  .container:focus .link {
     opacity: 1;
   }
   footer {
@@ -79,7 +80,7 @@ const Wrapper = styled.article`
   footer h5,
   footer p {
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 0.85rem;
     text-transform: capitalize;
   }
   footer p {

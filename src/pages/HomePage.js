@@ -12,7 +12,7 @@ import {
 
 function HomePage() {
   return (
-    <main>
+    <main role='main'>
       <Hero />
       <FeaturedProducts />
       <Story />

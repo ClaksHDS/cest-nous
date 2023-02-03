@@ -55,7 +55,8 @@ const Wrapper = styled.section`
     font-weight: 400;
     cursor: pointer;
   }
-  .link-btn:hover {
+  .link-btn:hover,
+  .link-btn:focus {
     background: var(--secondaryColor);
     color: var(--backgroundColor);
   }

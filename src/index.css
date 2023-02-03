@@ -16,7 +16,7 @@ html {
   --backgroundColor: #fffffe;
   --cardBackground: #eaddcf;
   --headlineColor: #2b2607;
-  --secondaryColor: #716040;
+  --secondaryColor: #4d4843;
   --productCoverColor: #fcfaf7;
   /* fonts*/
   --textFont: "Open Sans", sans-serif;
@@ -170,7 +170,8 @@ code {
   border-radius: var(--borderRadius);
   border-color: transparent;
 }
-.btn:hover {
+.btn:hover,
+.btn:focus {
   color: var(--secondaryColor);
   background: var(--cardBackground);
 }

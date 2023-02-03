@@ -18,7 +18,7 @@ const Filters = () => {
   return (
     <Wrapper>
       <div className='content'>
-        <form onSubmit={(e) => e.preventDefault()}>
+        <form role='search' onSubmit={(e) => e.preventDefault()}>
           {/* Search Input */}
           <div className='form-control'>
             <input
@@ -27,6 +27,7 @@ const Filters = () => {
               className='search-input'
               placeholder='rechercher'
               clearFilters='search-input'
+              aria-label='Rechercher un produit'
               value={text}
               onChange={updateFilters}
             />
@@ -59,6 +60,7 @@ const Filters = () => {
             <select
               name='company'
               value={company}
+              title='Filtrer par gammes'
               onChange={updateFilters}
               className='company'
             >

@@ -9,7 +9,7 @@ import { useCartContext } from "../context/cart_context";
 function CheckoutPage() {
   const { cart } = useCartContext();
   return (
-    <main>
+    <main role='main'>
       <PageHero title='Paiement' />
 
       <Wrapper className='page'>
@@ -44,7 +44,8 @@ const Wrapper = styled.div`
     color: var(--backgroundColor);
     margin-top: 2rem;
   }
-  .btn:hover {
+  .btn:hover,
+  .btn:focus {
     background: var(--secondaryColor);
   }
 `;

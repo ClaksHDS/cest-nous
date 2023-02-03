@@ -54,7 +54,8 @@ const Wrapper = styled.div`
     color: var(--headlineColor);
     box-shadow: var(--shadow-1);
   }
-  .scroll-btn:hover {
+  .scroll-btn:hover,
+  .scroll-btn:focus {
     color: var(--secondaryColor);
   }
   @media (min-width: 990px) {

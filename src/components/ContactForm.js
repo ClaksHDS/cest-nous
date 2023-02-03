@@ -21,6 +21,7 @@ const ContactForm = () => {
             placeholder='Votre nom'
             id='name'
             class='form-input'
+            autoComplete='family-name'
           />
         </div>
         <div class='form-row'>
@@ -32,6 +33,8 @@ const ContactForm = () => {
             id='email'
             class='form-input'
             placeholder='votre adresse e-mail'
+            autoComplete='email'
+            required
           />
           <small class='form-alert'>
             * Veuillez renseigner votre adresse e-mail
@@ -123,7 +126,8 @@ const Wrapper = styled.aside`
     width: 100%;
     transition: var(--transition);
   }
-  .btn:hover {
+  .btn:hover,
+  .btn:focus {
     background: var(--secondaryColor);
   }
 `;

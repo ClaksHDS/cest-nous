@@ -19,16 +19,32 @@ function Sliders() {
         <img className='d-block w-100' src={baies} alt='baies de genièvre' />
       </Carousel.Item>
       <Carousel.Item>
-        <img className='d-block w-100' src={bottles} alt='bouteille de gin' />
+        <img
+          className='d-block w-100'
+          src={bottles}
+          alt="Bouteilles de gin C'est Nous"
+        />
       </Carousel.Item>
       <Carousel.Item>
-        <img className='d-block w-100' src={bottle} alt='bouteille de gin' />
+        <img
+          className='d-block w-100'
+          src={bottle}
+          alt="Étiquetage et préparation à la main d'une bouteille de gin C'est Nous"
+        />
       </Carousel.Item>
       <Carousel.Item>
-        <img className='d-block w-100' src={drink} alt='bouteille de gin' />
+        <img
+          className='d-block w-100'
+          src={drink}
+          alt="Verre de gin tonic C'est Nous"
+        />
       </Carousel.Item>
       <Carousel.Item>
-        <img className='d-block w-100' src={event} alt='bouteille de gin' />
+        <img
+          className='d-block w-100'
+          src={event}
+          alt="Julie et Dave, les fondateurs de C'est Nous"
+        />
       </Carousel.Item>
     </Carousel>
   );

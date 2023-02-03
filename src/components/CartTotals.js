@@ -19,17 +19,17 @@ const CartTotals = () => {
     <Wrapper>
       <div>
         <article>
-          <h5>
+          <h4>
             sous-total : <span>{formatPrice(total_amount)}</span>
-          </h5>
+          </h4>
           <p>
             frais de port: <span>{formatPrice(shipping_mondial_relay)}</span>
           </p>
           <hr />
-          <h4>
+          <h5>
             total :{" "}
             <span>{formatPrice(total_amount + shipping_mondial_relay)}</span>
-          </h4>
+          </h5>
         </article>
         {myUser ? (
           <Link to='/checkout' className='btn' aria-label='pay your order'>
@@ -83,7 +83,8 @@ const Wrapper = styled.section`
     color: var(--backgroundColor);
     transition: var(--transition);
   }
-  .btn:hover {
+  .btn:hover,
+  .btn:focus {
     background: var(--secondaryColor);
   }
 `;

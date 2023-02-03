@@ -66,7 +66,8 @@ const Wrapper = styled.section`
     color: var(--backgroundColor);
     transition: var(--transition);
   }
-  .btn:hover {
+  .btn:hover,
+  .btn:focus {
     background-color: var(--secondaryColor);
   }
   .add-to-cart {

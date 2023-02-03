@@ -7,7 +7,7 @@ import logo from "../assets/logo.webp";
 
 const MentionLegalesPage = () => {
   return (
-    <main>
+    <main role='main'>
       <PageHero title='Mentions Légales'></PageHero>
       <Wrapper className='page'>
         <section className='section-center policy-content'>

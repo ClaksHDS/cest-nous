@@ -62,10 +62,14 @@ function SingleProductPage() {
   } = singleProduct;
 
   return (
-    <Wrapper>
+    <Wrapper role='main'>
       <PageHero title={name} singleProduct />
       <div className='section section-center page'>
-        <Link to='/products' className='btn'>
+        <Link
+          to='/products'
+          className='btn'
+          aria-label="Tous nos produits : Navigue vers la page présentant l'ensemble des produits"
+        >
           tous nos produits
         </Link>
         <div className='product-center'>
@@ -103,7 +107,8 @@ const Wrapper = styled.main`
     background: var(--headlineColor);
     color: var(--backgroundColor);
   }
-  .btn:hover {
+  .btn:hover,
+  .btn:focus {
     background: var(--secondaryColor);
   }
   .desc {

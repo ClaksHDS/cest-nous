@@ -65,7 +65,8 @@ const Wrapper = styled.section`
     background: var(--headlineColor);
     color: var(--backgroundColor);
   }
-  .btn:hover {
+  .btn:hover,
+  .btn:focus {
     background: var(--secondaryColor);
   }
   @media (min-width: 992px) {

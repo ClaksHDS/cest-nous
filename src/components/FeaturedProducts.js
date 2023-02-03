@@ -31,8 +31,8 @@ function FeaturedProducts() {
       <div className='section-centered featured'>
         {featured.slice(0, 3).map((product) => {
           return (
-            <div className='product-container'>
-              <Product key={product.id} {...product} />
+            <div className='product-container' key={product.id}>
+              <Product {...product} />
             </div>
           );
         })}
@@ -40,7 +40,7 @@ function FeaturedProducts() {
       <Link
         to='/products'
         className='btn products-btn'
-        aria-label='see more products and navigate to the products page'
+        aria-label="Voir plus de produits : Navigue vers la page présentant l'ensemble des produits"
       >
         voir plus de produits
       </Link>
@@ -84,7 +84,8 @@ const Wrapper = styled.section`
     color: var(--backgroundColor);
     transition: var(--transition);
   }
-  .products-btn:hover {
+  .products-btn:hover,
+  .products-btn:focus {
     background: var(--secondaryColor);
   }
   @media (min-width: 576px) {

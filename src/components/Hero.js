@@ -25,7 +25,7 @@ function Hero() {
         <div className='link-container'>
           <Link
             to='/products'
-            aria-label='see all the products and navigate to the products page'
+            aria-label="Découvrir nos spiritueux : Navigue vers la page présentant l'ensemble des produits"
             className='btn hero-btn'
           >
             découvrez nos spiritueux
@@ -76,7 +76,8 @@ const Wrapper = styled.section`
     padding: 0.75rem 1.5rem;
     transition: var(--transition);
   }
-  .hero-btn:hover {
+  .hero-btn:hover,
+  .hero-btn:focus {
     background: var(--secondaryColor);
   }
   @media (min-width: 992px) {

@@ -8,7 +8,7 @@ import { bio } from "../utils/data";
 
 function AboutPage() {
   return (
-    <main>
+    <main role='main'>
       <PageHero title='About' />
       <Wrapper className='page section section-center'>
         <div className='story-container'>
@@ -31,7 +31,11 @@ function AboutPage() {
               pratiquons manuellement.
             </p>
             <div className='link-container'>
-              <Link to='/products' className='btn nav-btn'>
+              <Link
+                to='/products'
+                className='btn nav-btn'
+                aria-label="Découvrir nos spiritueux : Navigue vers la page présentant l'ensemble des produits"
+              >
                 Découvrir nos spiritueux
               </Link>
             </div>
@@ -52,7 +56,9 @@ function AboutPage() {
                 </div>
                 <h3>{founderName}</h3>
                 <p>{bio}</p>
-                <p className='founder-quote'>"{quote}"</p>
+                <br />
+                <hr />
+                <q className='founder-quote'>{quote}</q>
               </section>
             );
           })}
@@ -66,7 +72,8 @@ function AboutPage() {
 
 /* Styles */
 const Wrapper = styled.section`
-  .title {
+  .title,
+  q {
     text-align: center;
   }
 
@@ -89,7 +96,8 @@ const Wrapper = styled.section`
       justify-content: center;
       padding: 0.55rem 2rem;
     }
-    .nav-btn:hover {
+    .nav-btn:hover,
+    .nav-btn:focus {
       background: var(--secondaryColor);
     }
   }
@@ -147,11 +155,12 @@ const Wrapper = styled.section`
       border-radius: 50%;
     }
     .founder-quote {
-      font-style: italic;
       text-align: center;
+      font-style: italic;
     }
   }
-  .team-box:hover {
+  .team-box:hover,
+  .team-box:focus {
     box-shadow: var(--shadow-2);
   }
 

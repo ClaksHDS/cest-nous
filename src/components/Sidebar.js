@@ -76,7 +76,8 @@ const Wrapper = styled.div`
     cursor: pointer;
     margin-top: 0.2rem;
   }
-  .close-btn:hover {
+  .close-btn:hover,
+  .close-btn:focus {
     color: var(--secondaryColor);
   }
   .logo {
@@ -96,7 +97,8 @@ const Wrapper = styled.div`
     color: var(--textColor);
     transition: var(--transition);
   }
-  .links a:hover {
+  .links a:hover,
+  .links a:focus {
     padding: 1rem 1.5rem;
     padding-left: 2rem;
     background: var(--cardBackground);

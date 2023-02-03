@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 const PageHero = ({ title, singleProduct }) => {
   return (
-    <Wrapper>
+    <Wrapper aria-label='Menu de navigation secondaire'>
       <div className='section-center'>
-        <h3>
+        <h2>
           <Link to='/'>Accueil</Link>
           {singleProduct && <Link to='/products'>/ Produits</Link>}/ {title}
-        </h3>
+        </h2>
       </div>
     </Wrapper>
   );
@@ -30,7 +30,8 @@ const Wrapper = styled.section`
     text-transform: capitalize;
     transition: var(--transition);
   }
-  a:hover {
+  a:hover,
+  a:focus {
     text-decoration: underline;
   }
 `;

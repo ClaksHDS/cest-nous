@@ -8,7 +8,7 @@ import { BsEnvelope } from "react-icons/bs";
 
 function Footer() {
   return (
-    <Wrapper>
+    <Wrapper role='contentinfo'>
       <ul className='social-links'>
         {socialLinks.map((social) => {
           const { id, icon, url } = social;
@@ -63,7 +63,8 @@ const Wrapper = styled.footer`
       transition: var(--transition);
       cursor: pointer;
     }
-    a:hover {
+    a:hover,
+    a:focus {
       font-size: 1.5rem;
     }
   }
