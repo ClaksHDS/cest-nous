@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 
 /* Images for the carousel*/
@@ -10,8 +10,20 @@ import drink from "../assets/images/drink.webp";
 import event from "../assets/images/event.webp";
 
 function Sliders() {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
   return (
-    <Carousel fade>
+    <Carousel
+      fade
+      activeIndex={index}
+      onSelect={handleSelect}
+      slide={false}
+      controls={true}
+      interval={null}
+    >
       <Carousel.Item>
         <img className='d-block w-100' src={alambic} alt='alambic still pot' />
       </Carousel.Item>
