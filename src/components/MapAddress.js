@@ -29,6 +29,13 @@ const MapAddress = () => {
             à nous contacter.
           </p>
           <p>
+            Adresse :
+            <br />
+            6 rue Francis de Pressencé
+            <br />
+            14460 COLOMBELLES
+          </p>
+          <p>
             Par email :
             <br />
             <a
@@ -74,7 +81,7 @@ const Wrapper = styled.section`
   p {
     line-height: 2;
     max-width: 45em;
-    padding-bottom: 1rem;
+    //padding-bottom: 1rem;
   }
   a {
     color: var(--headlineColor);
@@ -90,7 +97,7 @@ const Wrapper = styled.section`
       }
       .contact-container {
         justify-items: center;
-        padding-top: 7rem;
+        padding-top: 3rem;
       }
     }
   }
